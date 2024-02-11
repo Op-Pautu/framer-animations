@@ -1,7 +1,7 @@
 "use client";
 
 import { Step } from "@/components/Step";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function Steps() {
@@ -9,7 +9,7 @@ export default function Steps() {
 
   return (
     <div className="flex min-h-screen items-start bg-gradient-to-br from-slate-700 to-slate-900 pt-40">
-      <div className="mx-auto w-full max-w-md rounded-2xl bg-white">
+      <div className="mx-auto w-full max-w-lg rounded-2xl bg-white">
         <div className="flex justify-between rounded p-8">
           <Step step={1} currentStep={step} />
           <Step step={2} currentStep={step} />
